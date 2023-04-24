@@ -1,0 +1,172 @@
+.bodyProyectos {
+    min-height: 100vh;
+    background: rgba(46, 51, 49, 1);
+    background: -moz-linear-gradient(top, rgba(46, 51, 49, 1) 0%, rgba(46, 51, 49, 1) 0%, rgba(68, 72, 70, 1) 44%, rgba(68, 72, 70, 1) 51%, rgba(68, 72, 70, 1) 59%, rgba(46, 51, 49, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(46, 51, 49, 1)), color-stop(0%, rgba(46, 51, 49, 1)), color-stop(44%, rgba(68, 72, 70, 1)), color-stop(51%, rgba(68, 72, 70, 1)), color-stop(59%, rgba(68, 72, 70, 1)), color-stop(100%, rgba(46, 51, 49, 1)));
+    background: -webkit-linear-gradient(top, rgba(46, 51, 49, 1) 0%, rgba(46, 51, 49, 1) 0%, rgba(68, 72, 70, 1) 44%, rgba(68, 72, 70, 1) 51%, rgba(68, 72, 70, 1) 59%, rgba(46, 51, 49, 1) 100%);
+    background: -o-linear-gradient(top, rgba(46, 51, 49, 1) 0%, rgba(46, 51, 49, 1) 0%, rgba(68, 72, 70, 1) 44%, rgba(68, 72, 70, 1) 51%, rgba(68, 72, 70, 1) 59%, rgba(46, 51, 49, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(46, 51, 49, 1) 0%, rgba(46, 51, 49, 1) 0%, rgba(68, 72, 70, 1) 44%, rgba(68, 72, 70, 1) 51%, rgba(68, 72, 70, 1) 59%, rgba(46, 51, 49, 1) 100%);
+    background: linear-gradient(to bottom, rgba(46, 51, 49, 1) 0%, rgba(46, 51, 49, 1) 0%, rgba(68, 72, 70, 1) 44%, rgba(68, 72, 70, 1) 51%, rgba(68, 72, 70, 1) 59%, rgba(46, 51, 49, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2e3331', endColorstr='#2e3331', GradientType=0);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 1000px;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
+
+
+.container .proyecto {
+    position: relative;
+    height: 400px;
+    background-color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 30px 0;
+}
+
+@media (min-width: 768px) {
+    .container .proyecto {
+        height: 500px;
+        width: 70%;
+    }
+}
+
+@media (min-width: 992px) {
+    .container .proyecto {
+        flex-direction: row;
+        width: 45%;
+        height: 250px;
+    }
+}
+
+.container .proyecto .imgProy {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background-color: var(--grisClaro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+@media (min-width: 992px) {
+    .container .proyecto .imgProy {
+        position: absolute;
+        z-index: 1;
+        height: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .container .proyecto:hover .imgProy {
+        width: 200px;
+        height: 150px;
+        left: -75px;
+        top: calc(50% - 75px);
+        transition: 0.5s ease-in-out;
+    }
+}
+
+.container .proyecto .imgProy img {
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 992px) {
+
+    .container .proyecto .imgProy,
+    .container .proyecto .imgProy img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+.container .proyecto .infoProyecto {
+    position: relative;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 992px) {
+    .container .proyecto .infoProyecto {
+        position: absolute;
+        width: calc(100% - 125px);
+    }
+}
+
+.container .proyecto .infoProyecto h3 {
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+
+.container .proyecto .infoProyecto p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    .container .proyecto .infoProyecto p {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+    }
+}
+
+.container .proyecto .infoProyecto a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: var(--principal);
+    text-decoration: none;
+    color: var(--blanco);
+    width: 100%;
+    text-align: center;
+}
+
+.encabezadoProyectos h3 {
+    color: var(--blanco);
+    text-transform: capitalize;
+    font-size: 2rem;
+    width: 90%;
+    margin: 0 auto;
+    font-weight: 500;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .encabezadoProyectos h3 {
+        font-size: 2.4rem;
+    }
+}

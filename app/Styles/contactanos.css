@@ -1,0 +1,223 @@
+.contactanos {
+    position: relative;
+    min-height: 100vh;
+    padding: 10px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(to right, rgb(0 0 0 / .8), rgb(0 0 0 / .7)), url('../../public/img/FondoContactanos.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+    .contactanos {
+        padding: 50px 100px;
+    }
+}
+
+.contenidoContacto {
+    max-width: 800px;
+    text-align: center;
+}
+
+.contenidoContacto .titulo {
+    position: relative;
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--blanco);
+}
+
+@media (min-width: 768px) {
+    .contenidoContacto .titulo {
+        font-size: 2.4rem;
+    }
+}
+
+.contenidoContacto .subtitulo {
+    font-size: 1.2rem;
+    color: var(--blanco);
+    margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+    .contenidoContacto .subtitulo {
+        font-size: 1.6rem;
+    }
+}
+
+.contenidoContacto p {
+    font-weight: 100;
+    color: var(--blanco);
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.contenidoFormulario {
+    width: 100%;
+    display: flex;
+    margin: 30px;
+    flex-direction: column;
+}
+
+@media (min-width: 992px) {
+    .contenidoFormulario {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Información de contacto */
+
+.contenidoFormulario .contactoInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 992px) {
+    .contenidoFormulario .contactoInfo {
+        width: 50%;
+    }
+}
+
+.contenidoFormulario .contactoInfo .caja {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.contenidoFormulario .contactoInfo .caja .icon {
+    min-width: 45px;
+    height: 45px;
+    background: var(--blanco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.6rem;
+}
+
+.contenidoFormulario .contactoInfo .caja .icon i {
+    font-size: 1.4rem;
+}
+
+@media (min-width: 768px) {
+    .contenidoFormulario .contactoInfo .caja .icon {
+        min-width: 60px;
+        height: 60px;
+    }
+
+    .contenidoFormulario .contactoInfo .caja .icon i {
+        font-size: 1.6rem;
+    }
+}
+
+.contenidoFormulario .contactoInfo .caja .texto {
+    display: flex;
+    margin-left: 20px;
+    font-size: 12px;
+    color: var(--blanco);
+    flex-direction: column;
+    font-weight: 300;
+}
+
+@media (min-width: 768px) {
+    .contenidoFormulario .contactoInfo .caja .texto {
+        font-size: 16px;
+    }
+}
+
+.contenidoFormulario .contactoInfo .caja .texto h4 {
+    font-weight: 500;
+    color: var(--principal);
+}
+
+/* Formulario */
+
+.contactoForm {
+    width: 100%;
+    padding: 30px;
+    background-color: var(--blanco);
+    margin-top: 1rem;
+}
+
+@media (min-width: 992px) {
+    .contactoForm {
+        width: 40%;
+        padding: 40px;
+        margin-top: 0;
+    }
+}
+
+.contactoForm h2 {
+    font-size: 30px;
+    color: var(--gris);
+    font-weight: 500;
+}
+
+.contactoForm .input {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactoForm .input input,
+.contactoForm .input textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 12px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid var(--gris);
+    outline: none;
+    resize: none;
+}
+
+@media (min-width: 768px) {
+
+    .contactoForm .input input,
+    .contactoForm .input textarea {
+        font-size: 16px;
+    }
+}
+
+.contactoForm .input span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 12px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: var(--grisClaro);
+}
+
+@media (min-width: 768px) {
+    .contactoForm .input span {
+        font-size: 16px;
+    }
+}
+
+.contactoForm .input input:focus~span,
+.contactoForm .input input:valid~span,
+.contactoForm .input textarea:focus~span,
+.contactoForm .input textarea:valid~span {
+    color: var(--principal);
+    font-size: 12px;
+    transform: translateY(-20px);
+    font-weight: 500;
+}
+
+.contactoForm .input input[type="submit"] {
+    width: 100%;
+    background-color: var(--principal);
+    color: var(--blanco);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}

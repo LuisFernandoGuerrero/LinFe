@@ -1,0 +1,41 @@
+.footer {
+    width: 100%;
+    background-color: var(--gris);
+    padding: 2rem;
+    color: var(--blanco);
+    font-size: 0.7rem;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .footer {
+        flex-direction: row;
+        padding: 2rem 10rem;
+    }
+}
+
+.footer .logoCompleto {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .footer .logoCompleto {
+        width: 50%;
+    }
+}
+
+.footer p {
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .footer p {
+        font-size: 1rem;
+    }
+    
+}
