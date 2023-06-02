@@ -1,15 +1,17 @@
-import { Link } from '@remix-run/react'
 import logoCompleto from '../../public/img/logoLinfeCompleto.png'
+import BotonContactanos from './botonContactanos'
 
 const Footer = () => {
   return (
     <footer className='footer'>
-      <Link
-        to="/"><img src={logoCompleto} alt="logo completo LinFe" className="logoCompleto" />
-      </Link>
+      <div className="logotipo">
+        <a href="/"><img src={logoCompleto} alt="logoLinfe"/></a>
+      </div>
 
-      <p>Copyright &copy; 2023, LinFe Enterprise. Todos los derechos reservados.</p>
-
+      <div className="copyEInfo">
+        <p>Para nosotros es un placer trabajar para ti</p>
+        <BotonContactanos />
+      </div>
     </footer>
   )
 }

@@ -1,0 +1,99 @@
+.bodyServicios {
+    min-height: 100vh;
+    background: rgba(46, 51, 49, 1);
+    background: -moz-linear-gradient(top, rgba(46, 51, 49, 1) 0%, rgba(46, 51, 49, 1) 0%, rgba(68, 72, 70, 1) 44%, rgba(68, 72, 70, 1) 51%, rgba(68, 72, 70, 1) 59%, rgba(46, 51, 49, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(46, 51, 49, 1)), color-stop(0%, rgba(46, 51, 49, 1)), color-stop(44%, rgba(68, 72, 70, 1)), color-stop(51%, rgba(68, 72, 70, 1)), color-stop(59%, rgba(68, 72, 70, 1)), color-stop(100%, rgba(46, 51, 49, 1)));
+    background: -webkit-linear-gradient(top, rgba(46, 51, 49, 1) 0%, rgba(46, 51, 49, 1) 0%, rgba(68, 72, 70, 1) 44%, rgba(68, 72, 70, 1) 51%, rgba(68, 72, 70, 1) 59%, rgba(46, 51, 49, 1) 100%);
+    background: -o-linear-gradient(top, rgba(46, 51, 49, 1) 0%, rgba(46, 51, 49, 1) 0%, rgba(68, 72, 70, 1) 44%, rgba(68, 72, 70, 1) 51%, rgba(68, 72, 70, 1) 59%, rgba(46, 51, 49, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(46, 51, 49, 1) 0%, rgba(46, 51, 49, 1) 0%, rgba(68, 72, 70, 1) 44%, rgba(68, 72, 70, 1) 51%, rgba(68, 72, 70, 1) 59%, rgba(46, 51, 49, 1) 100%);
+    background: linear-gradient(to bottom, rgba(46, 51, 49, 1) 0%, rgba(46, 51, 49, 1) 0%, rgba(68, 72, 70, 1) 44%, rgba(68, 72, 70, 1) 51%, rgba(68, 72, 70, 1) 59%, rgba(46, 51, 49, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2e3331', endColorstr='#2e3331', GradientType=0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.encabezadoServicios {
+    position: relative;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.encabezadoServicios .servicio {
+    position: relative;
+    width: 350px;
+    height: 280px;
+    background-color: var(--gris);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.encabezadoServicios .servicio .icono {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--principal);
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    transition-delay: 0.25s;
+}
+
+.encabezadoServicios .servicio:hover .icono {
+    top: 30px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transition-delay: 0s;
+}
+
+.encabezadoServicios .servicio .icono img {
+    width: 40%;
+    transition: 0.5s;
+    transition-delay: 0.25s;
+}
+
+.encabezadoServicios .servicio:hover .icono img {
+    width: 35%;
+    transition-delay: 0s;
+}
+
+.encabezadoServicios .servicio .contenido {
+    position: relative;
+    padding: 20px;
+    color: var(--blanco);
+    text-align: center;
+    margin-top: 100px;
+    z-index: 1;
+    transform: scale(0);
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+
+.encabezadoServicios .servicio:hover .contenido {
+    transform: scale(1);
+    transition-delay: 0.25s;
+}
+
+.encabezadoServicios .servicio .contenido h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.encabezadoServicios .servicio .contenido p {
+    font-weight: 300;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+}

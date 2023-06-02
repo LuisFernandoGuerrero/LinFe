@@ -1,41 +1,68 @@
 .footer {
-    width: 100%;
     background-color: var(--gris);
-    padding: 2rem;
     color: var(--blanco);
     font-size: 0.7rem;
     font-weight: 300;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+}
+
+@media (min-width: 992px) {
+    .footer {
+        flex-wrap: nowrap;
+        padding: 8rem 10rem;
+        gap: 2rem;
+    }
+}
+
+.logotipo {
+    display: flex;
+    justify-content: center;
+}
+
+.logotipo a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .logotipo {
+        width: 60%;
+    }
+
+    .logotipo a {
+        width: 40%;
+    }
+}
+
+.logotipo a img {
+    width: 100%;
+}
+
+
+.copyEInfo {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-@media (min-width: 768px) {
-    .footer {
-        flex-direction: row;
-        padding: 2rem 10rem;
-    }
-}
-
-.footer .logoCompleto {
-    width: 100%;
-}
-
-@media (min-width: 768px) {
-    .footer .logoCompleto {
-        width: 50%;
-    }
-}
-
-.footer p {
-    font-size: 0.7rem;
+    gap: 3rem;
     text-align: center;
 }
 
-@media (min-width: 768px) {
-    .footer p {
-        font-size: 1rem;
+@media (min-width: 992px) {
+    .copyEInfo {
+        width: 55%;
+        text-align: start;
     }
-    
+}
+
+.copyEInfo p {
+    font-size: 1.2rem;
 }

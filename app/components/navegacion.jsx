@@ -1,4 +1,5 @@
 import { Link, useLocation } from '@remix-run/react'
+import BotonContactanos from './botonContactanos';
 
 const Navegacion = () => {
     const location = useLocation();
@@ -14,19 +15,14 @@ const Navegacion = () => {
                 className={location.pathname === "/Nosotros" ? 'active' : ''}
             >Nosotros</Link>
             <Link
-                to="/Equipo"
-                className={location.pathname === "/Equipo" ? 'active' : ''}
-            >Equipo</Link>
+                to="/Servicios"
+                className={location.pathname === "/Servicios" ? 'active' : ''}
+            >Servicios</Link>
             <Link
                 to="/Proyectos"
                 className={location.pathname === "/Proyectos" ? 'active' : ''}
             >Proyectos</Link>
-            <Link
-                to="/Contactanos"
-                className={
-                    location.pathname !== '/' ? 'contacto contactoDiferente' : 'contacto'
-                }
-            >Contactanos</Link>
+            <BotonContactanos />
         </nav>
     )
 }
