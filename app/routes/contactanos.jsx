@@ -1,6 +1,13 @@
 import Formulario from "../components/formulario"
 import stylesContacto from '../Styles/contactanos.css';
 
+export function meta() {
+  return {
+    title: 'LinFe Enterprise - Contactanos',
+    description: 'Contacta con nosotros y hablemos de las necesidades tuyas cómo profesional o de tu empresa.'
+  }
+}
+
 export function links() {
   return [
     {

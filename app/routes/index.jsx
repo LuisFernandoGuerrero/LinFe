@@ -1,7 +1,14 @@
 import Header from '../components/header'
 import imgRobot from '../../public/img/robot.png'
+import Servicios from '../routes/servicios'
 
 
+export function meta() {
+  return {
+    title: 'LinFe Enterprise - Inicio',
+    description: 'Bienvenido a la página oficial de LinFe Enterprise, tu empresa desarrolladora de software de confianza.'
+  }
+}
 
 export default function Inicio() {
   return (
@@ -21,8 +28,7 @@ export default function Inicio() {
           <img src={imgRobot} alt="alternativa" />
         </div>
       </div>
-      <div>Desde Inicio</div>
+      <Servicios />
     </section>
   )
 }
-

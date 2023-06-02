@@ -3,6 +3,9 @@ import faviconLinfe from '../public/favicon.ico'
 import Header from "./components/header";
 import Footer from "./components/footer";
 import stylesHeader from './Styles/header.css';
+import stylesNosotros from './Styles/nosotros.css'
+import stylesServicios from './Styles/servicios.css';
+import stylesContacto from './Styles/contactanos.css';
 import stylesFooter from './Styles/footer.css';
 import styles from './Styles/index.css';
 
@@ -19,6 +22,18 @@ export function links() {
     {
       rel: 'stylesheet',
       href: stylesHeader
+    },
+    {
+      rel: 'stylesheet',
+      href: stylesNosotros
+    },
+    {
+      rel: 'stylesheet',
+      href: stylesServicios
+    },
+    {
+      rel: 'stylesheet',
+      href: stylesContacto
     },
     {
       rel: 'stylesheet',

@@ -1,15 +1,12 @@
 import { useLoaderData } from '@remix-run/react';
 import { getServicios } from '../models/servicios.server';
 import ServiciosContenedor from '../components/servicioscontenedor';
-import stylesServicios from '../Styles/servicios.css';
 
-export function links() {
-  return [
-    {
-      rel: 'stylesheet',
-      href: stylesServicios
-    }
-  ]
+export function meta() {
+  return {
+    title: 'LinFe Enterprise - Servicios',
+    description: 'Mira los servicios que prestamos cómo empresa, podemos comenzar con tu solución desde cero.'
+  }
 }
 
 export async function loader() {

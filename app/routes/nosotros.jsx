@@ -1,14 +1,10 @@
-import stylesNosotros from '../Styles/nosotros.css'
 import imgNosotros from '../../public/img/FondoNosotros.png'
 
-
-export function links() {
-  return[
-    {
-      rel: 'stylesheet',
-      href: stylesNosotros
-    }
-  ]
+export function meta() {
+  return {
+    title: 'LinFe Enterprise - Nosotros',
+    description: 'Conoce más sobre nosotros, una empresa dedicada al desarrollo de software.'
+  }
 }
 
 const Nosotros = () => {

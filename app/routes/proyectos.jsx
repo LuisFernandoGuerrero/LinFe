@@ -3,6 +3,13 @@ import stylesProyectos from '../Styles/proyectos.css';
 import ProyectosContenedor from '../components/proyectoscontenedor'
 import { getProyectos } from '../models/proyectos.server';
 
+export function meta() {
+    return {
+      title: 'LinFe Enterprise - Proyectos',
+      description: 'Algunos proyectos de nuestros clientes o algunos ejemplos cómo podemos desarrollar tu software.'
+    }
+  }
+
 export function links() {
     return [
         {
