@@ -1,5 +1,8 @@
 import Header from '../components/header'
 import imgRobot from '../../public/img/robot.png'
+import Nosotros from '../routes/nosotros'
+import ServiciosContenedor from '../components/servicioscontenedor'
+import Contactanos from './contactanos'
 
 export function meta() {
   return {
@@ -26,6 +29,9 @@ export default function Inicio() {
           <img src={imgRobot} alt="alternativa" />
         </div>
       </div>
+
+      <Nosotros /> 
+      <Contactanos /> 
     </section>
   )
 }

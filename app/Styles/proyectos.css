@@ -26,7 +26,7 @@
 
 @media (min-width: 992px) {
     .container {
-        width: 60rem ;
+        width: 60rem;
         flex-direction: row;
         align-items: flex-start;
     }
@@ -96,11 +96,9 @@
 }
 
 @media (min-width: 992px) {
-
     .container .proyecto .imgProy,
     .container .proyecto .imgProy img {
-        width: 100%;
-        height: 100%;
+        object-fit: cover;
     }
 }
 
@@ -134,10 +132,11 @@
 .container .proyecto .infoProyecto p {
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 8;
     overflow: hidden;
 }
 
+/*
 @media (min-width: 768px) {
     .container .proyecto .infoProyecto p {
         display: -webkit-box;
@@ -146,6 +145,7 @@
         overflow: hidden;
     }
 }
+*/
 
 .container .proyecto .infoProyecto a {
     display: inline-block;
@@ -156,6 +156,7 @@
     color: var(--blanco);
     width: 100%;
     text-align: center;
+    cursor: pointer;
 }
 
 .encabezadoProyectos h3 {

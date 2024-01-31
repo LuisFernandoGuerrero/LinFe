@@ -97,3 +97,15 @@
         width: 50%;
     }
 }
+
+.nosotros a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: var(--principal);
+    text-decoration: none;
+    color: var(--blanco);
+    width: fit-content;
+    text-align: center;
+    cursor: pointer;
+}

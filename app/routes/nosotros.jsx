@@ -20,6 +20,7 @@ const Nosotros = () => {
           <p>LinFe Enterprise es una joven empresa de diseño y desarrollo de software con personal capacitado y experimentado en el área. Todos somos apacionados por el software y trabajamos junto a nuestros clientes para entender necesidades y ofrecer las soluciones personalizadas que les permitan alcanzar sus objetivos empresariales.</p>
           <p>En nuestro equipo tenemos experiencia en gran variedad de tecnologías y lenguajes de programación; Hacemos uso de metologías ágiles y colaborativas para así asegurarnos de que nuestros proyectos se entreguen a tiempo y dentro del presupuesto, sin perder el alto nivel de calidad y eficiencia.</p>
           <p>¡Gracias por considerarnos para su proyecto de página web! Esperamos trabajar con usted para crear una página web impresionante y efectiva que se adapte perfectamente a sus necesidades comerciales.</p>
+          <a href='/proyectos'>Nuestros Proyectos</a>
         </div>
       </div>
     </section>

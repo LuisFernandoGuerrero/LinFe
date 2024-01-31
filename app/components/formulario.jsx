@@ -30,14 +30,14 @@ const Formulario = () => {
         </div>
         <div className="contactoForm">
           <form action="">
-            <h2>Envia tu Mensaje</h2>
+            <h2>Envie su Mensaje</h2>
             <div className="input">
               <input type="text" required="required"/>
               <span>Nombre Completo</span>
             </div>
             <div className="input">
               <input type="email" required="required"/>
-              <span>Correo de Contacto</span>
+              <span>Correo Electronico</span>
             </div>
             <div className="input">
               <textarea required="required"></textarea>

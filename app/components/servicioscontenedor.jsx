@@ -1,26 +1,26 @@
 import Servicio from "./servicio";
 
 const ServiciosContenedor = ({ servicios }) => {
-    const serviciosOrdenados = servicios.sort((a, b) => {
-        if (a.id < b.id) {
-            return -1;
-        } else if (a.id < b.id) {
-            return 1;
-        } else {
-            return 0;
-        }
-    })
-
-    return (
-        <>
-            {serviciosOrdenados.map(servicio => (
-                <Servicio
-                    key={servicio?.id}
-                    servicio={servicio?.attributes}
-                />
-            ))}
-        </>
-    )
+  /*    const serviciosOrdenados = servicios.sort((a, b) => {
+          if (a.id < b.id) {
+              return -1;
+          } else if (a.id < b.id) {
+              return 1;
+          } else {
+              return 0;
+          }
+      })
+  */
+  return (
+    <>
+      {servicios.map(servicio => (
+        <Servicio
+          key={servicio?.id}
+          servicio={servicio}
+        />
+      ))}
+    </>
+  )
 }
 
 export default ServiciosContenedor

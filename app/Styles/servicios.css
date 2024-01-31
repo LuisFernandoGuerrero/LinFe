@@ -66,13 +66,21 @@
 }
 
 .encabezadoServicios .servicio .icono img {
-    width: 40%;
+    width: 100%;
     transition: 0.5s;
     transition-delay: 0.25s;
 }
 
+@media (min-width: 992px) {
+    .encabezadoServicios .servicio .icono img {
+        width: 40%;
+        transition: 0.5s;
+        transition-delay: 0.25s;
+    }
+}
+
 .encabezadoServicios .servicio:hover .icono img {
-    width: 35%;
+    width: 100%;
     transition-delay: 0s;
 }
 

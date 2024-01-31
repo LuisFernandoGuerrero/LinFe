@@ -1,0 +1,39 @@
+{
+    "servicios": [
+        {
+            "id": 1,
+            "nombre": "Desarrollo Web",
+            "descripcion": "Creación de páginas web a medida",
+            "imagen": "https://res.cloudinary.com/dnbbmkvar/image/upload/v1706663257/developer_ajpbme.png"
+        },
+        {
+            "id": 2,
+            "nombre": "Diseño Web",
+            "descripcion": "Creación de páginas web a medida",
+            "imagen": "https://res.cloudinary.com/dnbbmkvar/image/upload/v1706662380/diseno_rcndfy.png"
+        }
+    ],
+    "proyectos": [
+        {
+            "id": 1,
+            "nombre": "CXDE",
+            "description": "Proyecto desarrollado a cliente CXDE, empresa española dedicada al desarrollo de software.",
+            "website": "https://codingfdog.netlify.app/",
+            "imagen": "https://res.cloudinary.com/dnbbmkvar/image/upload/v1706664280/cxde_wzbmvg.png"
+        },
+        {
+            "id": 2,
+            "nombre": "Adobe",
+            "description": "Copia Página Web Adobe desarrollada con HTML, CSS, JS.",
+            "website": "https://adobefdog.netlify.app/",
+            "imagen": "https://res.cloudinary.com/dnbbmkvar/image/upload/v1706665841/adobe_wjorug.png"
+        },
+        {
+            "id": 3,
+            "nombre": "Cards Styles",
+            "description": "Muestra de diferentes estilos de tarjetas de presentación, desarrollada con HTML, CSS, JS",
+            "website": "https://cardsfdog.netlify.app/",
+            "imagen": "https://res.cloudinary.com/dnbbmkvar/image/upload/v1706666049/cards_a0euse.png"
+        }
+    ]
+}

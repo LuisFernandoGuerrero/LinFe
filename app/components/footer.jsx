@@ -9,7 +9,7 @@ const Footer = () => {
       </div>
 
       <div className="copyEInfo">
-        <p>Para nosotros es un placer trabajar para ti</p>
+        <p>Para nosotros es un placer trabajar para usted.</p>
         <BotonContactanos />
       </div>
     </footer>

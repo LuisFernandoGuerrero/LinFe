@@ -21,7 +21,7 @@ export function links() {
 
 export async function loader() {
     const resultado = await getProyectos();
-    return resultado.data
+    return resultado
 }
 
 const Proyectos = () => {

@@ -11,7 +11,7 @@ export function meta() {
 
 export async function loader() {
   const resultado = await getServicios();
-  return resultado.data
+  return resultado
 }
 
 const Servicios = () => {

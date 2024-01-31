@@ -8,10 +8,13 @@
     "typecheck": "tsc"
   },
   "dependencies": {
+    "@cloudinary/react": "^1.11.2",
+    "@cloudinary/url-gen": "^1.16.0",
     "@remix-run/node": "^1.15.0",
     "@remix-run/react": "^1.15.0",
     "@remix-run/serve": "^1.15.0",
     "isbot": "^3.6.8",
+    "json-server": "^1.0.0-alpha.23",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

@@ -6,7 +6,7 @@ const ProyectosContenedor = ({ proyectos }) => {
             {proyectos.map(proyecto => (
                 <Proyecto
                     key={proyecto?.id}
-                    proyecto={proyecto?.attributes}
+                    proyecto={proyecto}
                 />
             ))}
         </div>

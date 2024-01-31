@@ -8,6 +8,7 @@ import stylesServicios from './Styles/servicios.css';
 import stylesContacto from './Styles/contactanos.css';
 import stylesFooter from './Styles/footer.css';
 import styles from './Styles/index.css';
+import { Cloudinary } from "@cloudinary/url-gen";
 
 export function meta() {
   return {
@@ -42,7 +43,7 @@ export function links() {
     {
       rel: 'stylesheet',
       href: 'https://csstools.github.io/normalize.css/11.0.0/normalize.css'
-    }, 
+    },
     {
       rel: 'icon',
       type: 'image/x-icon',
@@ -84,6 +85,7 @@ export default function App() {
 
 function Document({ children }) {
   const location = useLocation();
+
   return (
     <html lang="es">
       <head>
