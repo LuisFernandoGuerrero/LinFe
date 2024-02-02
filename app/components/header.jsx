@@ -11,6 +11,7 @@ const Header = () => {
 
         toggle.classList.toggle('animarToggle')
         navegacion.classList.toggle('navegacionMobile')
+        // navegacion.classList.toggle('d-none')
     }
     return (
         <header className={location.pathname !== '/' ? 'header diferenteInicio' : 'header'}>
