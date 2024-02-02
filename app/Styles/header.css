@@ -31,7 +31,9 @@
 .header .imagenLogo {
     width: 5rem;
 }
-
+.navegacionMobile {
+    display: none;
+}
 .navegacion {
     display: flex;
     flex-direction: column;
